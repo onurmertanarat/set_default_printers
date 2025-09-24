@@ -1,41 +1,72 @@
-<h1>Set Default Printers</h1>
+# Windows Default Printer Setter
 
-<p>Set Default Printers is a Python script that allows you to set default printers on Windows.</p>
+A simple desktop application for Windows that allows users to quickly view and set their default printer from a clean graphical user interface (GUI).
 
-<h2>Files</h2>
+<p>
+  <img src="https://github.com/onurmertanarat/set_default_printers/blob/master/assets/set-default-printers-screenshot.PNG" alt="Application Screenshot">
+</p>
 
-<p>The project includes the following files:</p>
+---
 
-<ul>
-    <li><strong>set_with_gui.py:</strong> Python script with a graphical user interface (GUI) that displays a list of printers and allows you to set one of them as the default printer.</li>
-    <li><strong>set_with_shortcuts.py:</strong> Python script that sets specific printers as the default printer using keyboard shortcuts.</li>
-</ul>
+## Features
 
-<h2>Usage</h2>
+* **Dynamic Printer Discovery:** Automatically scans and lists all locally installed printers on the system.
+* **Simple User Interface:** An easy-to-use and intuitive interface built with Python's standard GUI library, Tkinter.
+* **Instant In-App Feedback:** A status bar at the bottom of the application provides immediate confirmation of successful operations or clear error messages.
+* **Self-Contained:** Works out-of-the-box after installation without the need for complex configuration files.
 
-<h3>Using set_with_gui.py</h3>
+---
 
-<ol>
-    <li>Ensure you have Python installed on your system.</li>
-    <li>Run the <code>set_with_gui.py</code> script in your terminal:</li>
-    <pre><code>python set_with_gui.py</code></pre>
-    <li>A window will open displaying a list of printers. Select a printer from the list and click the "Set Default Printer" button to set it as the default printer.</li>
-</ol>
+## Technology Stack
 
-<h3>Using set_with_shortcuts.py</h3>
+* **Python 3**
+* **Tkinter:** For the graphical user interface (part of the standard library).
+* **pywin32:** For interacting with the Windows API to list and set printers.
 
-<ol>
-    <li>Ensure you have Python installed on your system.</li>
-    <li>Run the <code>set_with_shortcuts.py</code> script in your terminal:</li>
-    <pre><code>python set_with_shortcuts.py</code></pre>
-    <li>Use the following keyboard shortcuts to set specific printers as the default printer:</li>
-    <ul>
-        <li>Ctrl + Alt + 1: Set Microsoft XPS Document Writer as the default printer</li>
-        <li>Ctrl + Alt + 2: Set Microsoft Print to PDF as the default printer</li>
-        <li>Ctrl + Alt + 3: Set Fax as the default printer</li>
-    </ul>
-</ol>
+---
 
-<h2>Contributing</h2>
+## Setup and Usage
 
-<p>If you would like to contribute, please open an issue or submit a pull request. Your constructive contributions are welcome!</p>
+### Prerequisites
+
+* Windows Operating System
+* Python 3.6+
+* pip
+
+### Installation & Setup
+
+1.  **Clone the repository:**
+    ```sh
+    git clone [https://github.com/onurmertanarat/set_default_printers.git](https://github.com/onurmertanarat/set_default_printers.git)
+    cd set_default_printers
+    ```
+
+2.  **Create and activate a virtual environment:**
+    ```sh
+    # Create the environment
+    python -m venv venv
+
+    # Activate on Windows
+    venv\Scripts\activate
+    ```
+
+3.  **Install the required packages:**
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+### Running the Application
+
+Simply run the `main.py` script to launch the GUI:
+
+```sh
+python main.py
+```
+
+---
+
+## Contact
+
+Onur Mert Anarat
+
+[linkedin.com/in/onurmertanarat](https://www.linkedin.com/in/onurmertanarat)
